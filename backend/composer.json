@@ -1,0 +1,45 @@
+{
+  "name": "medok2/smart-door-pro",
+  "description": "Professional Smart Door Access Control System",
+  "version": "1.0.0",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "A.K",
+      "email": "dev@example.com",
+      "homepage": "https://example.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-mysqli": "*",
+    "ext-hash": "*",
+    "ext-openssl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "php-parallel-lint/php-parallel-lint": "^1.0",
+    "squizlabs/php_codesniffer": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SmartDoor\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "migrate": "php bin/migrate.php",
+    "seed": "php bin/seed.php",
+    "test": "phpunit",
+    "lint": "parallel-lint src/",
+    "cs-check": "phpcs src/",
+    "cs-fix": "phpcbf src/"
+  }
+}
