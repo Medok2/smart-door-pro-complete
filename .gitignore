@@ -1,0 +1,79 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Dependencies
+node_modules/
+vendor/
+.gradle/
+.m2/
+
+# Build outputs
+build/
+dist/
+out/
+*.o
+*.a
+*.so
+.pio/
+.piolibdeps/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+
+# Secrets
+secrets/
+.secrets/
+private_keys/
+device_secrets/
+
+# Testing
+.coverage/
+coverage/
+*.lcov
+
+# Android
+*.apk
+*.aab
+*.hprof
+*.so
+.gradle/
+local.properties
+
+# Firmware
+.pioenvs/
+.piolibdeps/
+*.hex
+*.bin
+
+# Web builds
+dist/
+.next/
+out/
+
+# Misc
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
